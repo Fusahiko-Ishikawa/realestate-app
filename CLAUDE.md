@@ -36,9 +36,14 @@ React + Vite で構成されたシングルページアプリケーション。S
 
 ```
 VITE_SUPABASE_URL=...
-VITE_SUPABASE_ANON_KEY=...
+VITE_SUPABASE_PUBLISHABLE_KEY=...
 ```
 
 ### スタイリング
 
 CSS Modules（`*.module.css`）を採用。グローバルリセットのみ `src/index.css` に記述し、各コンポーネント・ページのスタイルはスコープ分離する。
+
+## デプロイ情報
+
+- 本番URL：https://realestate-app.vercel.app
+- Supabaseプロジェクト名：realestate-app
