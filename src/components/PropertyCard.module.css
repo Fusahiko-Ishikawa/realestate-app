@@ -1,0 +1,78 @@
+/* 物件カード */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.typeTag {
+  display: inline-block;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.rent {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.rentAmount {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.rentUnit {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.detail {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.detailLabel {
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  font-weight: 500;
+  min-width: 3.5rem;
+}
+
+.detailValue {
+  font-size: 0.8125rem;
+  color: #374151;
+}
