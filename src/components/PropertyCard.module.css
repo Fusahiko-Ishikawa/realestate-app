@@ -15,6 +15,12 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .typeTag {
   display: inline-block;
   background: #eff6ff;
@@ -23,7 +29,40 @@
   font-weight: 700;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
-  align-self: flex-start;
+}
+
+.cardActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton,
+.deleteButton {
+  border: none;
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.editButton {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.editButton:hover {
+  background: #e5e7eb;
+}
+
+.deleteButton {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.deleteButton:hover {
+  background: #fee2e2;
 }
 
 .name {

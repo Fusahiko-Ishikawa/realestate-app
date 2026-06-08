@@ -1,0 +1,136 @@
+/* 物件登録・編集モーダル */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.closeButton:hover {
+  color: #374151;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input {
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.9375rem;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.error {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.cancelButton {
+  background: transparent;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9375rem;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelButton:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.saveButton {
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  padding: 0.625rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.saveButton:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.saveButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
